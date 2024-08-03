@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fit Flex"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/text"
+        app:layout_constraintTop_toBottomOf="@id/text"
+       app:layout_constraintEnd_toEndOf="parent"
+        android:text="Dark Mode"
+       />
+
+
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/workout"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Do You Workout Daily?"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/img"
+        app:layout_constraintEnd_toEndOf="@id/img"
+        app:layout_constraintTop_toBottomOf="@id/img"
+        android:layout_marginTop="30dp"/>
+
+    <RadioButton
+        android:id="@+id/btnYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/verification"
+        app:layout_constraintTop_toBottomOf="@id/verification"
+        android:layout_marginTop="20dp"/>
+    <RadioButton
+        android:id="@+id/btnNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toEndOf="@+id/btnYes"
+        app:layout_constraintTop_toTopOf="@+id/btnYes"/>
+
+<!--    <Switch-->
+<!--        android:id="@+id/btnSwitch"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Dark mode"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        />-->
+
+
+
+
+
+
+
+<!--            <RadioButton-->
+<!--        android:id="@+id/btnYes"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="yes"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        app:layout_constraintStart_toStartOf="@id/img"-->
+<!--        app:layout_constraintTop_toTopOf="@id/img"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/img"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        />-->
+<!--    -->
+<!--    <RadioButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="No"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/btnyes"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/btnyes"-->
+<!--        />-->
+
+<!--        />-->
+
+<!--    <CheckBox-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btnswitch"-->
+<!--        app:layout_constraintStart_toStartOf="@id/btnswitch"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/checkbox"-->
+<!--/>-->
+
+<!--    <com.google.android.material.slider.Slider-->
+<!--        android:layout_width="270dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:valueFrom="0.0dp"-->
+<!--        android:valueTo="100.0dp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/checkbox"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/checkbox" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
